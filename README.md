@@ -1,2 +1,2 @@
 # Frontend-React---ENEVA
-Códigos das aulas de react e react native da Rocketseat.
+Código fonte da interface web do projeto da ENEVA.
