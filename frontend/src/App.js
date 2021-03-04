@@ -5,6 +5,7 @@ import './services/api';
 
 function App() {
   const [ user, setUser ] = useState('');
+  const [ password, setPassword ] = useState('');
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -31,7 +32,9 @@ function App() {
           <label htmlFor = "password">Senha</label>
           <input type = "password"
                 id = "password"
-                placeholder = "Sua senha">
+                placeholder = "Sua senha"
+                value = {password}
+                onChange = {event => setPassword(event.target.value)}>
           </input>
 
           <button className = "btn" type = "submit">Entrar</button>
