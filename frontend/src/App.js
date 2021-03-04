@@ -1,21 +1,31 @@
+import React from 'react';
 import './App.css';
+import logo from './assets/atos-logo.png'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="container">
+      <img src = {logo} alt = "Atos"></img>
+      <div className="content">
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Teste de <strong>exemplo</strong> da descrição
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <form>
+          <label htmlFor = "email">E-MAIL</label>
+          <input type = "text" 
+                 id = "email" 
+                 placeholder="Seu email">
+          </input>
+
+          <label htmlFor = "password">Senha</label>
+          <input type = "password"
+                id = "password"
+                placeholder = "Sua senha">
+          </input>
+
+          <button className = "btn" type = "submit">Entrar</button>
+        </form>
+      </div>
     </div>
   );
 }
