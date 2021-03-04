@@ -1,20 +1,28 @@
 import React from 'react';
 import './App.css';
 import logo from './assets/atos-logo.png'
+import './services/api';
 
 function App() {
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    console.log("hello world!!")
+    
+  };
+
   return (
     <div className="container">
       <img src = {logo} alt = "Atos"></img>
       <div className="content">
         <p>
-          Teste de <strong>exemplo</strong> da descrição
+          Texto de <strong>exemplo</strong> da descrição
         </p>
-        <form>
-          <label htmlFor = "email">E-MAIL</label>
+        <form onSubmit = {handleSubmit}>
+          <label htmlFor = "user">Usuário</label>
           <input type = "text" 
-                 id = "email" 
-                 placeholder="Seu email">
+                 id = "user" 
+                 placeholder="Seu usuário">
           </input>
 
           <label htmlFor = "password">Senha</label>
