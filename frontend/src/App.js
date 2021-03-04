@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import logo from './assets/atos-logo.png'
 import './services/api';
 
 function App() {
+  const [ user, setUser ] = useState('');
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -22,7 +23,9 @@ function App() {
           <label htmlFor = "user">Usuário</label>
           <input type = "text" 
                  id = "user" 
-                 placeholder="Seu usuário">
+                 placeholder="Seu usuário"
+                 value = {user}
+                 onChange = {event => setUser(event.target.value)}>
           </input>
 
           <label htmlFor = "password">Senha</label>
