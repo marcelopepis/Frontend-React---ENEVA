@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import api from '../../services/api';
 import '../Login/login.css'
+import logo from '../../assets/atos-logo.png'
 
 export default function Login({ history }) {
   const [ user, setUser ] = useState('');
@@ -19,8 +20,10 @@ export default function Login({ history }) {
     };
       
   return (
-    <>
-      <p>
+    <div className="container">
+        <img src = {logo} alt = "Atos"></img>
+        <div className="content">
+        <p>
         Texto de <strong>exemplo</strong> da descrição
       </p>
       <form onSubmit = {handleSubmit}>
@@ -42,6 +45,8 @@ export default function Login({ history }) {
 
         <button className = "btn" type = "submit">Entrar</button>
       </form>
-    </>
+      </div>
+      
+    </div>
   )
 }

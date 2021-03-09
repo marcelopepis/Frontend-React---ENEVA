@@ -9,12 +9,9 @@ function App() {
   
   return (
     <>
-      <div className="container">
-        <img src = {logo} alt = "Atos"></img>
-        <div className="content">
+      
           <Routes></Routes>
-        </div>
-      </div>
+        
     </>
   );
 }

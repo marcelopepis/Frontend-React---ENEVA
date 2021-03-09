@@ -5,11 +5,8 @@ import '../Dashboard/index.css'
 export default function Dashboard() {
   return (
     <>
-      <div className = "divContentDashboard">
       <Sidebar></Sidebar>
-        <h1>Pagina de Dashboard</h1>
-      </div>
-      
+      <h1>Pagina de Dashboard</h1>      
     </>
   )
 }
