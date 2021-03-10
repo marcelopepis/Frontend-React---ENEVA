@@ -8,10 +8,10 @@ import * as BsFile from  'react-icons/bs'
 export const SidebarData = [
   {
     title:'Cadastro',
-    path:'/cadastro',
+    path:'/dashboard',
     icon: <BsFile.BsFileEarmarkPlus/>,
-    iconClosed: <RiIcons.RiArrowDownFill/>,
-    iconOpened: <RiIcons.RiArrowUpFill/>,
+    iconClosed: <RiIcons.RiArrowDownSFill/>,
+    iconOpened: <RiIcons.RiArrowUpSFill/>,
     subNav: [
       {
         title: 'Bacias',
@@ -37,10 +37,10 @@ export const SidebarData = [
   },
   {
     title:'Consulta',
-    path:'/consulta',
+    path:'/dashboard',
     icon: <AiIcons.AiOutlineFileSearch/>,
-    iconClosed: <RiIcons.RiArrowDownFill/>,
-    iconOpened: <RiIcons.RiArrowUpFill/>,
+    iconClosed: <RiIcons.RiArrowDownSFill/>,
+    iconOpened: <RiIcons.RiArrowUpSFill/>,
     subNav: [
       {
         title: 'Teste 1',
@@ -56,10 +56,10 @@ export const SidebarData = [
   },
   {
     title:'Arquivo',
-    path:'/arquivo',
+    path:'/dashboard',
     icon: <FaIcons.FaFileCsv/>,
-    iconClosed: <RiIcons.RiArrowDownFill/>,
-    iconOpened: <RiIcons.RiArrowUpFill/>,
+    iconClosed: <RiIcons.RiArrowDownSFill/>,
+    iconOpened: <RiIcons.RiArrowUpSFill/>,
     subNav: [
       {
         title: 'Arquivo 1',
@@ -75,7 +75,7 @@ export const SidebarData = [
   },
   {
     title:'Sair',
-    path:'/login',
+    path:'/',
     icon:<IoIcons.IoIosLogOut/>
   },
 ]
