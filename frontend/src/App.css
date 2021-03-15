@@ -13,8 +13,8 @@ html, body, #root {
 }
 
 body {
-  background: #000 url('./assets/background.jpg') no-repeat;
-  background-size: cover;
+  background-color: #e2f8fd !important;
+  
   -webkit-font-smoothing: antialiased !important;
 }
 

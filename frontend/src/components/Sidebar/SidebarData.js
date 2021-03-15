@@ -15,7 +15,7 @@ export const SidebarData = [
     subNav: [
       {
         title: 'Bacias',
-        path: 'cadastro/bacias',
+        path: '/bacias',
         icon: <IoIcons.IoIosPaper/>,
       },
       {
