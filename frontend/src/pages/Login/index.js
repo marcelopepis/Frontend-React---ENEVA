@@ -24,8 +24,8 @@ export default function Login({ history }) {
         <img src = {logo} alt = "Atos"></img>
         <div className="content">
         <p>
-        Texto de <strong>exemplo</strong> da descrição
-      </p>
+          Texto de <strong>exemplo</strong> da descrição
+        </p>
       <form onSubmit = {handleSubmit}>
         <label htmlFor = "user">Usuário</label>
         <input type = "text" 
