@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Sidebar from '../../components/Sidebar/Sidebar'
 import "./bacias.css";
-import api from '../../services/api';
+//import api from '../../services/api';
 
 
 export default function Bacias() {
@@ -12,9 +12,10 @@ export default function Bacias() {
 
   async function handleSubmit(event) {
     event.preventDefault();
-    console.log("teste");
+    console.log(numBacia);
+    console.log(nome);
+    console.log(idRegiao);
   }
-
 
   return (
     <>
@@ -37,7 +38,6 @@ export default function Bacias() {
                     placeholder="nome da bacia"
                     value = {nome}
                     onChange = {event => setNome(event.target.value)}>
-
             </input>
             <label>
             Escolha a Região

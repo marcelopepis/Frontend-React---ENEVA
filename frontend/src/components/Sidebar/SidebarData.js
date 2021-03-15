@@ -19,15 +19,15 @@ export const SidebarData = [
         icon: <IoIcons.IoIosPaper/>,
       },
       {
-        title: 'Postos',
-        path: '/postos',
-        icon: <IoIcons.IoIosPaper/>,
-      },
-      {
         title: 'Subbacias',
         path: '/subbacias',
         icon: <IoIcons.IoIosPaper/>,
       },
+      {
+        title: 'Postos',
+        path: '/postos',
+        icon: <IoIcons.IoIosPaper/>,
+      },      
       {
         title: 'Regiões',
         path: '/regioes',
