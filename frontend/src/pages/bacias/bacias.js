@@ -4,7 +4,7 @@ import "./bacias.css";
 //import api from '../../services/api';
 
 
-export default function Bacias() {
+export default function Bacias({ history }) {
 
   const [numBacia, setNumBacia ] = useState('');
   const [nome, setNome] = useState('');
@@ -15,7 +15,14 @@ export default function Bacias() {
     console.log(numBacia);
     console.log(nome);
     console.log(idRegiao);
-  }
+
+    history.push('/dashboard');
+  };
+
+  function handleCancel(event){
+    console.log("cancelado");
+    history.push('/dashboard');
+  };
 
   return (
     <>
@@ -29,6 +36,7 @@ export default function Bacias() {
                     id="numBacia"
                     placeholder="bacia"
                     value = {numBacia}
+                    required
                     onChange = {event => setNumBacia(event.target.value)}>
 
             </input>
@@ -37,11 +45,12 @@ export default function Bacias() {
                     id="nome"
                     placeholder="nome da bacia"
                     value = {nome}
+                    required
                     onChange = {event => setNome(event.target.value)}>
             </input>
             <label>
             Escolha a Região
-            <select value={idRegiao} onChange={event => setIdRegiao(event.target.value)}>
+            <select value={idRegiao} required onChange={event => setIdRegiao(event.target.value)}>
               <option value="01">01 Região Teste</option>
               <option value="02">02 Região Teste</option>
               <option value="03">03 Região Teste</option>
@@ -49,7 +58,7 @@ export default function Bacias() {
             </select>
             </label>
             <div className="btnArea">
-              <button className = "btnCancelar" type = "submit">Cancelar</button>
+              <button className = "btnCancelar" onClick={handleCancel}>Cancelar</button>
               <button className = "btnSalvar" type = "submit">Salvar</button>
             </div>
             
