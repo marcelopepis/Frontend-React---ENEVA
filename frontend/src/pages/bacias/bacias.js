@@ -20,7 +20,7 @@ export default function Bacias({ history }) {
   };
 
   function handleCancel(event){
-    console.log("cancelado");
+    console.log("cancelado bacias");
     history.push('/dashboard');
   };
 
@@ -43,19 +43,19 @@ export default function Bacias({ history }) {
             <label htmlFor="nome">Nome</label>
             <input type="text"
                     id="nome"
-                    placeholder="nome da bacia"
+                    placeholder="Nome da bacia"
                     value = {nome}
                     required
                     onChange = {event => setNome(event.target.value)}>
             </input>
             <label>
-            Escolha a Região
-            <select value={idRegiao} required onChange={event => setIdRegiao(event.target.value)}>
-              <option value="01">01 Região Teste</option>
-              <option value="02">02 Região Teste</option>
-              <option value="03">03 Região Teste</option>
-              <option value="04">04 Região Teste</option>
-            </select>
+              Escolha a Região
+              <select value={idRegiao} required onChange={event => setIdRegiao(event.target.value)}>
+                <option value="01">01 Região Teste</option>
+                <option value="02">02 Região Teste</option>
+                <option value="03">03 Região Teste</option>
+                <option value="04">04 Região Teste</option>
+              </select>
             </label>
             <div className="btnArea">
               <button className = "btnCancelar" onClick={handleCancel}>Cancelar</button>

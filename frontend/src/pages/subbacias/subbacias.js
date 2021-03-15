@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Sidebar from '../../components/Sidebar/Sidebar'
 import "./subbacias.css";
+//import api from '../../services/api';
 
 export default function Subbacias({ history }) {
   const [ numSubbacia, setNumSubbacia ] = useState('');
@@ -17,8 +18,6 @@ export default function Subbacias({ history }) {
     console.log("cancelado subbacia");
     history.push('/dashboard');
   }
-
-
 
   return (
     <>
