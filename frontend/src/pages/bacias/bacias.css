@@ -31,6 +31,11 @@ option {
   flex-direction: column;
 }
 
+.btnAreaModal {
+  margin-top: 30px;
+  flex-direction: column;
+}
+
 
 .btnSalvar {
   border: 0;

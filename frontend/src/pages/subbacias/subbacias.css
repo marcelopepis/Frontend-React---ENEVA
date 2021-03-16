@@ -1,0 +1,27 @@
+.btnSalvarModal{
+  border: 0;
+  border-radius: 2px;
+  width: 49%;
+  margin-left: 5px;
+  height: 45px;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #39e258;
+  color: #fff;
+  cursor: pointer;
+
+}
+
+.btnCancelarModal {
+  border: 0;
+  border-radius: 2px;
+  width: 49%;
+  height: 45px;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #39c3e2;
+  color: #fff;
+  cursor: pointer;
+}
