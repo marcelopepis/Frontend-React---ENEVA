@@ -130,7 +130,6 @@ export default function Bacias({ history }) {
                 <button className = "btnSalvarModal" onClick={handleNewModal}>Novo</button>
               </div>
             </div>
-            
           </Fade>
         </Modal>
       </div>

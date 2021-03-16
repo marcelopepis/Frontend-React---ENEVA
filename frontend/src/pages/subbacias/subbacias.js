@@ -130,13 +130,9 @@ export default function Subbacias({ history }) {
                 <button className = "btnSalvarModal" onClick={handleNewModal}>Novo</button>
               </div>
             </div>
-            
           </Fade>
         </Modal>
       </div>
-
-
-
     </>
   )
 }

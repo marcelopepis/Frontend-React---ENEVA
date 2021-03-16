@@ -29,7 +29,7 @@ export default function TransitionsModal(option, title, message, history) {
   function handleNewModal(){
     
     handleClose();
-    history.push('/bacias');
+    history.push('/regioes');
   }
 
   const handleOpen = () => {
@@ -40,10 +40,10 @@ export default function TransitionsModal(option, title, message, history) {
     setOpen(false);
   };
 
-  if (option) {
-    handleOpen();
+  if (option === true) {
+    setOpen(true);
   }else {
-    handleClose();
+    setOpen(false);
   }
 
   return (
