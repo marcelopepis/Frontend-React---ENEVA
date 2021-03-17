@@ -33,6 +33,16 @@ export const SidebarData = [
         path: '/regioes',
         icon: <IoIcons.IoIosPaper/>,
       },
+      {
+        title: 'Termoelétricas',
+        path: '/termoeletricas',
+        icon: <IoIcons.IoIosPaper/>,
+      },
+      {
+        title: 'Hidroelétricas',
+        path: '/hidroeletricas',
+        icon: <IoIcons.IoIosPaper/>,
+      },
     ]  
   },
   {

@@ -18,7 +18,6 @@ export default function Subbacias({ history }) {
     event.preventDefault();
     console.log(numSubbacia);
     console.log(nome);
-    console.log("teste");
     handleOpen();
   }
 
