@@ -6,6 +6,7 @@ import Bacias from './pages/bacias/bacias';
 import Postos from './pages/postos/postos';
 import Subbacias from './pages/subbacias/subbacias';
 import Regioes from './pages/regioes/regioes';
+import Hidro from './pages/hidroeletricas/hidro';
 
 
 export default function Routes() {
@@ -18,6 +19,7 @@ export default function Routes() {
         <Route path = "/postos" component = {Postos} />
         <Route path = "/subbacias" component = {Subbacias} />
         <Route path = "/regioes" component = {Regioes} />
+        <Route path = "/hidro" component = {Hidro} />
         
       </Switch>
     </BrowserRouter>

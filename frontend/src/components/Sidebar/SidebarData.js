@@ -35,31 +35,12 @@ export const SidebarData = [
       },
       {
         title: 'Termoelétricas',
-        path: '/termoeletricas',
+        path: '/hidro',
         icon: <IoIcons.IoIosPaper/>,
       },
       {
         title: 'Hidroelétricas',
-        path: '/hidroeletricas',
-        icon: <IoIcons.IoIosPaper/>,
-      },
-    ]  
-  },
-  {
-    title:'Consulta',
-    path:'/dashboard',
-    icon: <AiIcons.AiOutlineFileSearch/>,
-    iconClosed: <RiIcons.RiArrowDownSFill/>,
-    iconOpened: <RiIcons.RiArrowUpSFill/>,
-    subNav: [
-      {
-        title: 'Teste 1',
-        path: 'consulta/teste1',
-        icon: <IoIcons.IoIosPaper/>,
-      },
-      {
-        title: 'Teste 2',
-        path: 'consulta/teste2',
+        path: '/hidro',
         icon: <IoIcons.IoIosPaper/>,
       },
     ]  
@@ -72,13 +53,8 @@ export const SidebarData = [
     iconOpened: <RiIcons.RiArrowUpSFill/>,
     subNav: [
       {
-        title: 'Arquivo 1',
+        title: 'Envio de Arquivo',
         path: 'arquivo/teste1',
-        icon: <IoIcons.IoIosPaper/>,
-      },
-      {
-        title: 'Arquivo 2',
-        path: 'arquivo/teste2',
         icon: <IoIcons.IoIosPaper/>,
       },
     ]  

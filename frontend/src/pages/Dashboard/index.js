@@ -6,7 +6,7 @@ export default function Dashboard() {
   return (
     <>
       <Sidebar></Sidebar>
-      <h1>Pagina de Dashboard</h1>      
+           
     </>
   )
 }
