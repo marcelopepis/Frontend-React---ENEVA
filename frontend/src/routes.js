@@ -8,6 +8,7 @@ import Subbacias from './pages/subbacias/subbacias';
 import Regioes from './pages/regioes/regioes';
 import Hidro from './pages/hidroeletricas/hidro';
 import Termo from './pages/termoeletricas/termo';
+import FileUpload from './pages/fileUpload/fileUpload';
 
 
 export default function Routes() {
@@ -22,6 +23,7 @@ export default function Routes() {
         <Route path = "/regioes" component = {Regioes} />
         <Route path = "/hidro" component = {Hidro} />
         <Route path = "/termo" component = {Termo} />
+        <Route path = "/fileupload" component = {FileUpload} />
         
       </Switch>
     </BrowserRouter>

@@ -54,7 +54,7 @@ export const SidebarData = [
     subNav: [
       {
         title: 'Envio de Arquivo',
-        path: 'arquivo/teste1',
+        path: '/fileupload',
         icon: <IoIcons.IoIosPaper/>,
       },
     ]  
