@@ -37,7 +37,6 @@ export default function Termo({ history }){
   function handleCancel() {
     
     console.log("cancelado região");
-    //handleOpen();
     history.push('/dashboard');
   }
 
