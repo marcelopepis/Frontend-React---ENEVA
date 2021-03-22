@@ -8,7 +8,7 @@ import * as BsFile from  'react-icons/bs'
 export const SidebarData = [
   {
     title:'Cadastro',
-    
+    path:'#',
     icon: <BsFile.BsFileEarmarkPlus/>,
     iconClosed: <RiIcons.RiArrowDownSFill/>,
     iconOpened: <RiIcons.RiArrowUpSFill/>,
@@ -47,7 +47,7 @@ export const SidebarData = [
   },
   {
     title:'Arquivo',
-    path:'/dashboard',
+    path:'#',
     icon: <FaIcons.FaFileCsv/>,
     iconClosed: <RiIcons.RiArrowDownSFill/>,
     iconOpened: <RiIcons.RiArrowUpSFill/>,

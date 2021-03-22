@@ -4,15 +4,15 @@ import  { DropContainer, UploadMessage } from './styles.js';
 
 
 export default class Upload extends Component {
-  
+
   renderDragMessage = (isDragActive, isDragReject) => {
     if(!isDragActive) {
-      return <UploadMessage>Arraste arquivos aqui...</UploadMessage>
+      return <UploadMessage>Clique ou arraste arquivos aqui...</UploadMessage>
     }
     if(isDragReject) {
       return <UploadMessage type="error">Arquivo não suportado</UploadMessage>
     }
-    return <UploadMessage type="success">Clique ou arraste seus arquivos aqui</UploadMessage>
+    return <UploadMessage type="success">Arraste seus arquivos aqui</UploadMessage>
   }
   
   render() {
