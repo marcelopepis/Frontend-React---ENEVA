@@ -1,6 +1,16 @@
 import React, { useState } from 'react';
-
+import Upload from '../../components/Upload/upload';
+import Sidebar from '../../components/Sidebar/Sidebar';
 
 export default function FileUpload( {history} ) {
-  return("");
+  return(
+    <>
+      <Sidebar></Sidebar>
+      <div className="container">
+        < div className="content">
+          <Upload></Upload>
+        </div>
+      </div>
+    </>
+  );
 }
