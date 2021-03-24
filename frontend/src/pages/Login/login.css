@@ -93,3 +93,12 @@ body, input, button, select, option {
   background-size: cover;
   -webkit-font-smoothing: antialiased !important;
 }
+
+.btnLogin {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  width: 48%;
+}

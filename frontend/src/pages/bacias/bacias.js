@@ -75,7 +75,7 @@ export default function Bacias({ history }) {
           <p>Cadastro de <strong>Bacias</strong></p>
           <form onSubmit = {handleSubmit}>
             <label htmlFor="numBacia">Número da Bacia</label>
-            <input type="text"
+            <input type="number"
                     id="numBacia"
                     placeholder="bacia"
                     value = {numBacia}

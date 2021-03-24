@@ -5,7 +5,7 @@ import logo from '../../assets/atos-logo.png'
 
 export default function Login({ history }) {
   const [ user, setUser ] = useState('');
-    const [ password, setPassword ] = useState('');
+  const [ password, setPassword ] = useState('');
 
     async function handleSubmit(event) {
       event.preventDefault();
@@ -18,6 +18,10 @@ export default function Login({ history }) {
       //localStorage.setItem('user', _id);
       history.push('/dashboard');
     };
+
+    function handleSignup() {
+      history.push('/signup');
+    }
       
   return (
     <div className="container">
@@ -42,11 +46,14 @@ export default function Login({ history }) {
               value = {password}
               onChange = {event => setPassword(event.target.value)}>
         </input>
-
-        <button className = "btn" type = "submit">Entrar</button>
+        
+        <div className="btnLogin">
+            <button className = "btn" onClick = { handleSignup }>Cadastrar</button>
+            <button className = "btn" type = "submit">Entrar</button>
+            
+          </div>
       </form>
       </div>
-      
     </div>
-  )
-}
+  );
+};

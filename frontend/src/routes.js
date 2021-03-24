@@ -9,6 +9,7 @@ import Regioes from './pages/regioes/regioes';
 import Hidro from './pages/hidroeletricas/hidro';
 import Termo from './pages/termoeletricas/termo';
 import FileUpload from './pages/fileUpload/fileUpload';
+import Signup from './pages/Signup/signup';
 
 
 export default function Routes() {
@@ -24,7 +25,7 @@ export default function Routes() {
         <Route path = "/hidro" component = {Hidro} />
         <Route path = "/termo" component = {Termo} />
         <Route path = "/fileupload" component = {FileUpload} />
-        
+        <Route path = "/signup" component = {Signup} />        
       </Switch>
     </BrowserRouter>
     
